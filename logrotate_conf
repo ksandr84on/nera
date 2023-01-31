@@ -1,0 +1,14 @@
+/var/log/greenera/node.log
+{
+        rotate 7
+        daily
+        missingok
+        notifempty
+        compress
+        prerotate
+                /usr/bin/systemctl stop greenera.service
+        endscript
+        postrotate
+                /usr/bin/systemctl start greenera.service
+        endscript
+}
