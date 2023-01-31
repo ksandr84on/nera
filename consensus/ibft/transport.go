@@ -1,7 +1,7 @@
 package ibft
 
 import (
-	"github.com/ksandr84on/go-ibft/messages/proto"
+	"github.com/0xPolygon/go-ibft/messages/proto"
 	"github.com/ksandr84on/nera/network"
 	"github.com/ksandr84on/nera/types"
 	"github.com/libp2p/go-libp2p/core/peer"

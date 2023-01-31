@@ -59,9 +59,9 @@ require (
 	lukechampine.com/blake3 v1.1.7 // indirect
 )
 
-require gopkg.in/DataDog/dd-trace-go.v1 v1.43.1
+require github.com/0xPolygon/go-ibft v0.2.0
 
-require github.com/ksandr84on/go-ibft v1.2.0
+require gopkg.in/DataDog/dd-trace-go.v1 v1.43.1
 
 require (
 	cloud.google.com/go/compute v1.10.0 // indirect

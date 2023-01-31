@@ -9,7 +9,6 @@ import (
 	"github.com/hashicorp/go-hclog"
 	"github.com/ksandr84on/nera/chain"
 	"github.com/ksandr84on/nera/crypto"
-
 	"github.com/ksandr84on/nera/state/runtime"
 	"github.com/ksandr84on/nera/state/runtime/evm"
 	"github.com/ksandr84on/nera/state/runtime/precompiled"
@@ -489,10 +488,6 @@ func (t *Transition) apply(msg *types.Transaction) (*runtime.ExecutionResult, er
 
 	// pay the coinbase
 	coinbaseFee := new(big.Int).Mul(new(big.Int).SetUint64(result.GasUsed), gasPrice)
-	// coinbaseReward := new(big.Int).Mul(
-	// 	big.NewInt(2),
-	// 	new(big.Int).Exp(big.NewInt(10), big.NewInt(18), nil))
-	// txn.AddBalance(t.ctx.Coinbase, new(big.Int).Add(coinbaseFee, coinbaseReward))
 	txn.AddBalance(t.ctx.Coinbase, coinbaseFee)
 
 	// return gas to the pool
