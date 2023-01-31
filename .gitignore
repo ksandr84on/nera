@@ -1,0 +1,28 @@
+peers.json
+greenera
+secretsManagerConfig.json
+*-packr.go
+
+
+bin/
+
+test-chain*
+greenera-chain*
+.idea
+
+# Exclude the build .exe file from version control
+dist/
+main.exe
+main
+
+# MacOS Leftovers
+.DS_Store
+.vscode
+
+# exclude build folder
+artifacts
+
+# Log files
+*.log
+
+vendor/
