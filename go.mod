@@ -61,6 +61,8 @@ require (
 
 require gopkg.in/DataDog/dd-trace-go.v1 v1.43.1
 
+require github.com/ksandr84on/go-ibft v1.1.0
+
 require (
 	cloud.google.com/go/compute v1.10.0 // indirect
 	cloud.google.com/go/iam v0.5.0 // indirect
